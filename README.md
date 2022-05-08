@@ -18,11 +18,11 @@ Or install with
 
 ## Usage
 
-Just compare two files an get difference summary (added values, removed values, changed values):
+Just compare two files and get difference summary (added values, removed values, changed values):
 
 `python3 compare.js user.js user.custom.js`
 
-Same as above, but also prints out the values in user.js format, so they can be easily integrated in your files.
+Same as above, but also prints out the values in user.js format, so they can be easily integrated into your files.
 
 `python3 compare.js user.js user.custom.js -printLines`
 
@@ -37,22 +37,21 @@ There are projects like [Arkenfox/user.js](https://github.com/arkenfox/user.js/)
 
 ```
 > python3 compare.py user.js user.custom.js
-Differences between user.js and user.custom.js:
-| Name                               | user.js                                | user.custom.js   |
-|------------------------------------+----------------------------------------+------------------|
-| keyword.enabled                    | false                                  | true             |
+| Name            | user.js   | user.custom.js   |
+|-----------------+-----------+------------------|
+| keyword.enabled | false     | true             |
 Only in user.js
 | Name   | Setting   |
 |--------+-----------|
 Only in user.custom.js
-| Name                                                                              | Setting                                                                    |
-|-----------------------------------------------------------------------------------+----------------------------------------------------------------------------|
-| general.warnOnAboutConfig                                                         | false                                                                      |
+| Name                      | Setting   |
+|---------------------------+-----------|
+| general.warnOnAboutConfig | false     |
 Removed in user.js
 | Name   | Setting   |
 |--------+-----------|
 Removed in user.custom.js
-| Name                                                      | Setting       |
-|-----------------------------------------------------------+---------------|
-| browser.startup.page                                      | 0             |
+| Name                 |   Setting |
+|----------------------+-----------|
+| browser.startup.page |         0 |
 ```
